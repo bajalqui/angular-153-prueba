@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Edgar Gustavo",
+      "lastname": "Bajalqui",
+      "email": "edgar.bajalqui@gmail.com",
+      "phone": "987654321",
+      "sexo": 1,
+      "updated_at": 1559422119310
+    },
+    {
+      "id": 2,
+      "name": "Juan",
+      "lastname": "Perez",
+      "email": "juan.perez@gmail.com",
+      "phone": "965874122",
+      "sexo": 1
+    },
+    {
+      "id": 3,
+      "name": "Juana",
+      "lastname": "Arco",
+      "email": "juana.arco@outlook.com",
+      "phone": "963541257",
+      "sexo": 2
+    },
+    {
+      "id": 4,
+      "name": "Alicia",
+      "lastname": "Fernandez",
+      "email": "alicia.fernandez@gmail.com",
+      "phone": "963574189",
+      "sexo": 2
+    },
+    {
+      "name": "Leidy",
+      "lastname": "Lopez",
+      "email": "leidy.lopez@gmail.com",
+      "phone": "987662322",
+      "sexo": 2,
+      "id": 5
+    },
+    {
+      "name": "Jose",
+      "lastname": "Rivera",
+      "email": "jose.rivera@gmail.com",
+      "phone": "213242344",
+      "sexo": 1,
+      "id": 6
+    }
+  ]
+}

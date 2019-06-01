@@ -1,0 +1,39 @@
+<div class="container">
+    <h2 class="text-center mb-3">
+        Lista de Usuarios
+        <a routerLink="./new" class="btn btn-secondary text-white" style="cursor: pointer;">Nuevo usuario</a>
+    </h2>
+
+    <table class="table table-striped text-center">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Sexo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <th>{{ user.id }}</th>
+                <td>{{ user.name}}</td>
+                <td>{{ user.lastname}}</td>
+                <td>{{ user.email}}</td>
+                <td>{{ user.phone}}</td>
+                <td>{{ user.sexo === 1 ? 'Varon' : 'Mujer' }}</td>
+                <td>
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-sm mr-2" type="button" (click)="onUpdateUser(user)">Actualizar</button>
+                        <button class="btn btn-danger btn-sm" (click)="onRemoveUser(user)" type="button">Eliminar</button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+        </ngb-pagination>
+    </div>
+</div>
